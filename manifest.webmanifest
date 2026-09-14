@@ -1,0 +1,9 @@
+{
+  "name": "Michael Winkler – Mobile App Developer",
+  "short_name": "Michael Winkler",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050807",
+  "theme_color": "#07110c",
+  "icons": []
+}

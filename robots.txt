@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jchillah.github.io/michael-winkler-portfolio/sitemap.xml

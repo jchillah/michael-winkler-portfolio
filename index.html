@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07110c" />
+
+  <title>Michael Winkler | Mobile App Developer – Flutter, Kotlin & SwiftUI</title>
+  <meta
+    name="description"
+    content="Portfolio von Michael Winkler, Mobile App Developer aus Berlin. Flutter/Dart, Kotlin/Jetpack Compose, Swift/SwiftUI, Firebase, Supabase und moderne App-Architekturen."
+  />
+  <meta
+    name="keywords"
+    content="Michael Winkler, Mobile App Developer, Flutter Developer, Android Entwickler, Kotlin, Jetpack Compose, iOS Entwickler, SwiftUI, Berlin, App Entwickler"
+  />
+  <meta name="author" content="Michael Winkler" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://jchillah.github.io/michael-winkler-portfolio/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Michael Winkler | Mobile App Developer" />
+  <meta
+    property="og:description"
+    content="Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI – Mobile Apps mit sauberer Architektur, APIs und Cloud-Backends."
+  />
+  <meta property="og:url" content="https://jchillah.github.io/michael-winkler-portfolio/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Winkler",
+    "jobTitle": "Mobile App Developer",
+    "url": "https://jchillah.github.io/michael-winkler-portfolio/",
+    "sameAs": [
+      "https://github.com/jchillah",
+      "https://my-personal-cv-app-65750.web.app/"
+    ],
+    "knowsAbout": [
+      "Flutter",
+      "Dart",
+      "Kotlin",
+      "Jetpack Compose",
+      "Swift",
+      "SwiftUI",
+      "Firebase",
+      "Supabase",
+      "MVVM",
+      "Clean Architecture"
+    ]
+  }
+  </script>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Startseite">
+        <span class="brand-mark" aria-hidden="true">MW</span>
+        <span class="brand-copy">
+          <strong>Michael Winkler</strong>
+          <span data-i18n="brandRole">Mobile App Developer</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="#projects" data-i18n="navProjects">Projekte</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#about" data-i18n="navAbout">Über mich</a>
+        <a href="#contact" data-i18n="navContact">Kontakt</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Sprache wechseln">
+          <span class="lang-option active" data-lang-label="de">DE</span>
+          <span aria-hidden="true">/</span>
+          <span class="lang-option" data-lang-label="en">EN</span>
+        </button>
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+          aria-label="Menü öffnen"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation" hidden>
+      <a href="#projects" data-i18n="navProjects">Projekte</a>
+      <a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#about" data-i18n="navAbout">Über mich</a>
+      <a href="#contact" data-i18n="navContact">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            <span data-i18n="availability">Offen für Junior-Rollen, Projekte & Kooperationen</span>
+          </div>
+
+          <h1>
+            <span data-i18n="heroPrefix">Ich entwickle</span>
+            <span class="gradient-text" data-i18n="heroHighlight">Mobile Apps</span>
+            <span data-i18n="heroSuffix">mit klarer Architektur und echtem Produktfokus.</span>
+          </h1>
+
+          <p class="hero-intro" data-i18n="heroIntro">
+            Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI. Von der Idee über APIs und
+            Cloud-Backends bis zur releasefähigen App.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">
+              <span data-i18n="viewProjects">Projekte ansehen</span>
+              <span aria-hidden="true">↘</span>
+            </a>
+            <a
+              class="button secondary"
+              href="https://my-personal-cv-app-65750.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span data-i18n="openCv">Interaktive CV-App</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="hero-links" aria-label="Externe Profile">
+            <a href="https://github.com/jchillah" target="_blank" rel="noopener noreferrer">
+              GitHub ↗
+            </a>
+            <a href="mailto:Michael.Winkler.Developer@gmail.com">
+              E-Mail ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Developer Profil">
+          <div class="profile-shell">
+            <div class="profile-topbar">
+              <span></span><span></span><span></span>
+              <code>portfolio.dev</code>
+            </div>
+
+            <div class="profile-content">
+              <div class="avatar-ring">
+                <img
+                  src="https://avatars.githubusercontent.com/u/8373786?v=4"
+                  alt="Michael Winkler"
+                  width="156"
+                  height="156"
+                />
+              </div>
+
+              <p class="profile-label">MICHAEL_WINKLER</p>
+              <h2 data-i18n="profileTitle">Mobile App Developer</h2>
+              <p class="profile-location">Berlin · Germany · Remote</p>
+
+              <div class="terminal-card" aria-label="Tech Stack">
+                <div><span class="prompt">›</span> flutter <span>clean architecture</span></div>
+                <div><span class="prompt">›</span> kotlin <span>jetpack compose</span></div>
+                <div><span class="prompt">›</span> swift <span>swiftui · swiftdata</span></div>
+                <div><span class="prompt">›</span> cloud <span>firebase · supabase</span></div>
+                <div class="cursor-line"><span class="prompt">›</span><span class="cursor"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container stat-grid reveal" aria-label="Portfolio Highlights">
+        <article class="stat-card">
+          <strong>3</strong>
+          <span data-i18n="statPlatforms">Mobile Plattformen</span>
+        </article>
+        <article class="stat-card">
+          <strong>3</strong>
+          <span data-i18n="statFlagships">Flagship-Projekte</span>
+        </article>
+        <article class="stat-card">
+          <strong>MVVM</strong>
+          <span data-i18n="statArchitecture">Architektur-Fokus</span>
+        </article>
+        <article class="stat-card">
+          <strong>CI/CD</strong>
+          <span data-i18n="statQuality">Qualität & Delivery</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">01 / WORK</span>
+          <div>
+            <h2 data-i18n="projectsTitle">Ausgewählte Projekte</h2>
+            <p data-i18n="projectsIntro">
+              Drei Projekte, drei Plattform-Strategien – mit Fokus auf Architektur, Daten,
+              reale Produktanforderungen und wartbaren Code.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-card-featured reveal">
+            <div class="project-visual android-visual" aria-hidden="true">
+              <div class="phone phone-left">
+                <img
+                  src="https://raw.githubusercontent.com/jchillah/GameRadar/main/img/screen1.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="phone phone-right">
+                <img
+                  src="https://raw.githubusercontent.com/jchillah/GameRadar/main/img/screen3.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-watermark">ANDROID</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Android · Kotlin</span>
+                <span class="project-status" data-i18n="publicRepo">Public Repository</span>
+              </div>
+              <h3>GameRadar</h3>
+              <p data-i18n="gameRadarDescription">
+                Native Android-App für die Suche, Verwaltung und Analyse von Videospielen.
+                RAWG-API, Offline-Cache, Favoriten, Wunschliste, Filter und Export/Import.
+              </p>
+
+              <div class="chip-row" aria-label="GameRadar Technologien">
+                <span>Kotlin</span><span>Jetpack Compose</span><span>Room</span>
+                <span>Retrofit</span><span>Koin</span><span>MVVM/MVI</span>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  class="text-link"
+                  href="https://github.com/jchillah/GameRadar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="sourceCode"
+                >Quellcode ↗</a>
+                <a
+                  class="text-link"
+                  href="https://github.com/jchillah/GameRadar/releases/download/GameRadarv1.0.0/game-radar.apk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >APK ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual ios-visual" aria-hidden="true">
+              <div class="phone single-phone">
+                <img
+                  src="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_1.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="chart-lines">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="project-watermark">iOS</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span>iOS · Swift</span>
+                <span class="project-status" data-i18n="releaseCandidate">Release Candidate</span>
+              </div>
+              <h3>CryptoTracker</h3>
+              <p data-i18n="cryptoDescription">
+                Native iOS-App für Kryptomärkte mit Charts, Favoriten, Firebase-Login,
+                Firestore und lokalem SwiftData-Offline-Fallback.
+              </p>
+
+              <div class="chip-row">
+                <span>Swift</span><span>SwiftUI</span><span>SwiftData</span>
+                <span>Firebase</span><span>REST</span><span>GitHub Actions</span>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  class="text-link"
+                  href="https://github.com/jchillah/CryptoTracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="sourceCode"
+                >Quellcode ↗</a>
+                <a
+                  class="text-link"
+                  href="https://jchillah.github.io/cryptotracker-pitchdeck/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="pitchDeck"
+                >Pitch Deck ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual flutter-visual" aria-hidden="true">
+              <div class="flutter-symbol">◇</div>
+              <div class="server-grid">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="project-watermark">FLUTTER</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Cross Platform · Flutter</span>
+                <span class="project-status live" data-i18n="published">Android veröffentlicht</span>
+              </div>
+              <h3>ASA Server Eye</h3>
+              <p data-i18n="asaDescription">
+                Flutter Companion-App mit Serverdaten, Favoriten, Alerts, Profilen,
+                rollenbasierter Sichtbarkeit, Firebase und Premium-Zugängen.
+              </p>
+
+              <div class="chip-row">
+                <span>Flutter</span><span>Dart</span><span>Riverpod</span>
+                <span>Dio</span><span>Firebase</span><span>Feature-first</span>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  class="text-link"
+                  href="https://github.com/jchillah/asa-server-eye"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="sourceCode"
+                >Quellcode ↗</a>
+                <a
+                  class="text-link"
+                  href="https://jchillah.github.io/asa-server-eye-privacy-policy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="privacyPage"
+                >Support-Seite ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-work reveal">
+          <p data-i18n="moreWork">
+            Weitere Lern-, Produkt- und Architekturprojekte befinden sich auf meinem GitHub-Profil.
+          </p>
+          <a class="button secondary compact" href="https://github.com/jchillah?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="allRepositories">Alle Repositories</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">02 / STACK</span>
+          <div>
+            <h2 data-i18n="skillsTitle">Technischer Fokus</h2>
+            <p data-i18n="skillsIntro">
+              Plattformübergreifende Produktentwicklung mit nativer Tiefe und klarer
+              Trennung von UI, Business-Logik und Datenzugriff.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills-layout">
+          <article class="skill-panel reveal">
+            <div class="skill-heading">
+              <span class="skill-index">01</span>
+              <div>
+                <h3>Flutter / Dart</h3>
+                <p data-i18n="flutterSkill">
+                  Cross-Platform Apps mit Feature-first-Struktur, Riverpod/Provider,
+                  Firebase, Supabase und REST APIs.
+                </p>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>Flutter</span><span>Dart</span><span>Riverpod</span>
+              <span>Firebase</span><span>Supabase</span><span>REST</span>
+            </div>
+          </article>
+
+          <article class="skill-panel reveal">
+            <div class="skill-heading">
+              <span class="skill-index">02</span>
+              <div>
+                <h3>Android</h3>
+                <p data-i18n="androidSkill">
+                  Native Android-Entwicklung mit Kotlin, Jetpack Compose,
+                  Coroutines/Flow, Room, Retrofit und Dependency Injection.
+                </p>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>Kotlin</span><span>Compose</span><span>Coroutines</span>
+              <span>Room</span><span>Retrofit</span><span>Koin</span>
+            </div>
+          </article>
+
+          <article class="skill-panel reveal">
+            <div class="skill-heading">
+              <span class="skill-index">03</span>
+              <div>
+                <h3>iOS</h3>
+                <p data-i18n="iosSkill">
+                  Native iOS-Apps mit SwiftUI, MVVM, Swift Concurrency,
+                  SwiftData, Firebase und REST-Integrationen.
+                </p>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>Swift</span><span>SwiftUI</span><span>SwiftData</span>
+              <span>async/await</span><span>Firebase</span><span>SPM</span>
+            </div>
+          </article>
+
+          <article class="skill-panel reveal">
+            <div class="skill-heading">
+              <span class="skill-index">04</span>
+              <div>
+                <h3 data-i18n="engineeringTitle">Engineering</h3>
+                <p data-i18n="engineeringSkill">
+                  Saubere Architektur, Git-Workflows, Tests, CI/CD,
+                  API-Integration und releaseorientierte Produktentwicklung.
+                </p>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>MVVM</span><span>Clean Architecture</span><span>Git</span>
+              <span>GitHub Actions</span><span>Testing</span><span>Figma</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="section-heading about-heading reveal">
+          <span class="section-kicker">03 / ABOUT</span>
+          <div>
+            <h2 data-i18n="aboutTitle">Produktdenken statt nur Screens bauen.</h2>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="lead" data-i18n="aboutLead">
+            Ich entwickle Apps mit dem Anspruch, dass Architektur, Nutzererlebnis und
+            reale Produktanforderungen zusammenpassen.
+          </p>
+          <p data-i18n="aboutText1">
+            Mein Schwerpunkt liegt auf Mobile Development für Flutter, Android und iOS.
+            Ich arbeite strukturiert mit MVVM, Repository Pattern, Use Cases,
+            API-Integrationen und Cloud-Backends und achte auf nachvollziehbare
+            Zuständigkeiten im Code.
+          </p>
+          <p data-i18n="aboutText2">
+            Besonders motivieren mich Produkte mit echtem Nutzen: Anwendungen, die
+            Prozesse vereinfachen, Informationen verständlich machen oder Menschen
+            im Alltag konkret unterstützen.
+          </p>
+
+          <div class="principles">
+            <article>
+              <span>01</span>
+              <div>
+                <h3 data-i18n="principleArchitecture">Architektur</h3>
+                <p data-i18n="principleArchitectureText">Klare Verantwortlichkeiten und wartbarer Code.</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3 data-i18n="principleProduct">Produkt</h3>
+                <p data-i18n="principleProductText">Technik wird an Nutzer- und Business-Zielen ausgerichtet.</p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3 data-i18n="principleDelivery">Delivery</h3>
+                <p data-i18n="principleDeliveryText">Git, Reviews, Tests und reproduzierbare Builds.</p>
+              </div>
+            </article>
+          </div>
+
+          <a
+            class="button secondary"
+            href="https://my-personal-cv-app-65750.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span data-i18n="fullCv">Vollständigen Lebenslauf öffnen</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <span class="section-kicker">04 / CONTACT</span>
+          <h2 data-i18n="contactTitle">Haben Sie ein Produkt, das eine starke App braucht?</h2>
+          <p data-i18n="contactText">
+            Ich bin offen für Junior-/Entry-Level-Positionen, Startup-Teams,
+            Freelance-Projekte und technische Kooperationen.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:Michael.Winkler.Developer@gmail.com">
+            <span data-i18n="writeEmail">E-Mail schreiben</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="button secondary"
+            href="https://github.com/jchillah"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="contact-footer">
+          <span>Berlin · Germany</span>
+          <span>Remote</span>
+          <span>Flutter · Android · iOS</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Michael Winkler</strong>
+        <p data-i18n="footerRole">Mobile App Developer · Berlin</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:Michael.Winkler.Developer@gmail.com">E-Mail</a>
+        <a href="https://github.com/jchillah" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://my-personal-cv-app-65750.web.app/" target="_blank" rel="noopener noreferrer">CV-App</a>
+      </div>
+      <p class="copyright">© <span id="year"></span> Michael Winkler</p>
+    </div>
+  </footer>
+</body>
+</html>
