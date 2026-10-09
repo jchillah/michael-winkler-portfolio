@@ -144,6 +144,7 @@ function applyLanguage(nextLanguage) {
   language = translations[nextLanguage] ? nextLanguage : "de";
   document.documentElement.lang = language;
   localStorage.setItem("portfolio-language", language);
+  localStorage.setItem("business-demo-language", language);
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
@@ -161,6 +162,8 @@ function applyLanguage(nextLanguage) {
     language === "de" ? "Sprache auf Englisch wechseln" : "Switch language to German"
   );
 }
+
+window.addEventListener("storage", (event) => { if (event.key === "business-demo-language" && translations[event.newValue]) applyLanguage(event.newValue); });
 
 languageToggle?.addEventListener("click", () => {
   applyLanguage(language === "de" ? "en" : "de");
