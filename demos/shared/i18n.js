@@ -1,6 +1,6 @@
 (() => {
   const phrases = {
-    "Business Software Concepts":"Business-Software-Konzepte","Business software concepts":"Business-Software-Konzepte",
+    "Business Software Concepts | Michael Winkler":"Unternehmenssoftware-Konzepte | Michael Winkler","Business Software Concepts":"Business-Software-Konzepte","Business software concepts":"Business-Software-Konzepte",
     "Your business.":"Dein Unternehmen.","Smarter software.":"Intelligentere Software.","Your business. Smarter software.":"Dein Unternehmen. Intelligentere Software.",
     "Business software · Concept lab":"Businesssoftware · Konzeptlabor","Business software / Demo data":"Businesssoftware / Beispieldaten",
     "Practical software concepts for teams that need fewer spreadsheets, clearer processes and reliable information. Explore the interactive demos below, built with sample data to illustrate possible workflows.":"Praktische Softwarekonzepte für Teams, die weniger Tabellen, klarere Prozesse und zuverlässige Informationen benötigen. Entdecke die interaktiven Demos mit Beispieldaten.",
@@ -58,7 +58,7 @@
   }
   function apply(next) {
     language=next==="en"?"en":"de";
-    try{localStorage.setItem("business-demo-language",language);}catch(_){}
+    try{localStorage.setItem("business-demo-language",language);localStorage.setItem("portfolio-language",language);}catch(_){}
     translateTree();
     document.dispatchEvent(new CustomEvent("business-language-change",{detail:{language}}));
   }
