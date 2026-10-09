@@ -4,15 +4,19 @@ Professional developer portfolio for **Michael Winkler**.
 
 ## Positioning
 
-**Mobile App Developer · Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI**
+**Cross-Platform Software Developer · Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI**
 
-The site presents selected production-oriented projects, technical focus, architecture principles and direct links to the interactive CV and GitHub profile.
+The site presents selected projects and interactive business-software concepts for web, mobile and desktop. Target platforms depend on project scope, device APIs and required native integrations.
 
 ## Featured projects
 
 - **GameRadar** — Native Android / Kotlin / Jetpack Compose
 - **CryptoTracker** — Native iOS / SwiftUI / SwiftData
 - **ASA Server Eye** — Flutter / Riverpod / Firebase
+
+## Cross-platform delivery
+
+Flutter supports web, iOS, Android, Windows, macOS and Linux from a shared codebase where project requirements and plugin support allow. Native Kotlin/Jetpack Compose and Swift/SwiftUI are appropriate when platform-specific capabilities or native UX are needed. See the [official Flutter platform matrix](https://docs.flutter.dev/reference/supported-platforms).
 
 ## Tech
 
@@ -77,6 +81,6 @@ The portfolio also includes three interactive, static prototypes intended to dem
 - **Field Service Desk** — create work orders, filter by technician and move jobs between workflow states.
 - **Invoice Workspace** — inspect invoice statuses and due dates, add sample invoices, update payment status and export CSV.
 
-Open the showcase at `business-solutions.html`. The demos run without a backend or paid services and use fictional sample data only. They are not production systems, real customer deployments or legally compliant e-invoice software. A production build would require discovery, backend persistence, authentication/authorization, auditability, security testing and appropriate compliance review.
+Open the showcase at `business-solutions.html`. The demos include a persistent German/English language selector, responsive layouts, localized date/currency formatting and localized CSV headers where supported. They run without a backend or paid services and use fictional sample data only. They are not production systems, real customer deployments or legally compliant e-invoice software. A production build would require discovery, backend persistence, authentication/authorization, auditability, security testing and appropriate compliance review.
 
 The working brand name **NeoJayTech** is still subject to domain and trademark checks; no availability or legal clearance is claimed.
