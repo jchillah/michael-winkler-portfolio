@@ -1,6 +1,6 @@
 const translations = {
   de: {
-    brandRole: "Mobile App Developer",
+    brandRole: "Cross-Platform Software Developer",
     navProjects: "Projekte",
     navSkills: "Skills",
     navAbout: "Über mich",
@@ -8,7 +8,7 @@ const translations = {
     navSolutions: "Business Software",
     solutionsTitle: "Softwarekonzepte für echte Geschäftsprozesse",
     solutionsIntro: "Entdecke interaktive Prototypen für Inventar, Außendienst und Rechnungsabläufe. Alle Demos verwenden fiktive Beispieldaten.",
-    inventoryDemoTitle: "Echtzeit-Inventar",
+    inventoryDemoTitle: "Lagerverwaltung",
     inventoryDemoDescription: "Produkte suchen, Bestände prüfen, niedrige Lagerbestände erkennen und eine Bestandsliste exportieren.",
     serviceDemoTitle: "Service- und Arbeitsaufträge",
     serviceDemoDescription: "Arbeitsaufträge anlegen, nach Technikern filtern und Aufgaben durch einen klaren Ablauf führen.",
@@ -19,13 +19,13 @@ const translations = {
     allBusinessDemos: "Alle Business-Software-Demos",
     availability: "Offen für Junior-Rollen, Projekte & Kooperationen",
     heroPrefix: "Ich entwickle",
-    heroHighlight: "Mobile Apps",
+    heroHighlight: "Cross-Platform Software",
     heroSuffix: "mit klarer Architektur und echtem Produktfokus.",
-    heroIntro: "Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI. Von der Idee über APIs und Cloud-Backends bis zur releasefähigen App.",
+    heroIntro: "Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI. Von der Idee über APIs und Cloud-Backends bis zu releasefähiger Software für Web, Mobile und Desktop.",
     viewProjects: "Projekte ansehen",
     openCv: "Interaktive CV-App",
-    profileTitle: "Mobile App Developer",
-    statPlatforms: "Mobile Plattformen",
+    profileTitle: "Cross-Platform Software Developer",
+    statPlatforms: "Zielplattformen",
     statFlagships: "Flagship-Projekte",
     statArchitecture: "Architektur-Fokus",
     statQuality: "Qualität & Delivery",
@@ -43,15 +43,15 @@ const translations = {
     moreWork: "Weitere Lern-, Produkt- und Architekturprojekte befinden sich auf meinem GitHub-Profil.",
     allRepositories: "Alle Repositories",
     skillsTitle: "Technischer Fokus",
-    skillsIntro: "Plattformübergreifende Produktentwicklung mit nativer Tiefe und klarer Trennung von UI, Business-Logik und Datenzugriff.",
-    flutterSkill: "Cross-Platform Apps mit Feature-first-Struktur, Riverpod/Provider, Firebase, Supabase und REST APIs.",
+    skillsIntro: "Plattformübergreifende Produktentwicklung für Web, iOS, Android, Windows, macOS und Linux – mit klarer Trennung von UI, Business-Logik und Datenzugriff.",
+    flutterSkill: "Cross-Platform-Apps für Web, iOS, Android, Windows, macOS und Linux mit Feature-first-Struktur, Riverpod/Provider, Firebase, Supabase und REST APIs.",
     androidSkill: "Native Android-Entwicklung mit Kotlin, Jetpack Compose, Coroutines/Flow, Room, Retrofit und Dependency Injection.",
     iosSkill: "Native iOS-Apps mit SwiftUI, MVVM, Swift Concurrency, SwiftData, Firebase und REST-Integrationen.",
     engineeringTitle: "Engineering",
     engineeringSkill: "Saubere Architektur, Git-Workflows, Tests, CI/CD, API-Integration und releaseorientierte Produktentwicklung.",
     aboutTitle: "Produktdenken statt nur Screens bauen.",
     aboutLead: "Ich entwickle Apps mit dem Anspruch, dass Architektur, Nutzererlebnis und reale Produktanforderungen zusammenpassen.",
-    aboutText1: "Mein Schwerpunkt liegt auf Mobile Development für Flutter, Android und iOS. Ich arbeite strukturiert mit MVVM, Repository Pattern, Use Cases, API-Integrationen und Cloud-Backends und achte auf nachvollziehbare Zuständigkeiten im Code.",
+    aboutText1: "Mein Schwerpunkt ist plattformübergreifende Produktentwicklung mit Flutter sowie native Entwicklung mit Kotlin/Jetpack Compose und Swift/SwiftUI, wenn die Plattform es verlangt. Ich arbeite strukturiert mit MVVM, Repository Pattern, Use Cases, API-Integrationen und Cloud-Backends.",
     aboutText2: "Besonders motivieren mich Produkte mit echtem Nutzen: Anwendungen, die Prozesse vereinfachen, Informationen verständlich machen oder Menschen im Alltag konkret unterstützen.",
     principleArchitecture: "Architektur",
     principleArchitectureText: "Klare Verantwortlichkeiten und wartbarer Code.",
@@ -63,10 +63,10 @@ const translations = {
     contactTitle: "Haben Sie ein Produkt, das eine starke App braucht?",
     contactText: "Ich bin offen für Junior-/Entry-Level-Positionen, Startup-Teams, Freelance-Projekte und technische Kooperationen.",
     writeEmail: "E-Mail schreiben",
-    footerRole: "Mobile App Developer · Berlin"
+    footerRole: "Cross-Platform Software Developer · Berlin"
   },
   en: {
-    brandRole: "Mobile App Developer",
+    brandRole: "Cross-Platform Software Developer",
     navProjects: "Projects",
     navSkills: "Skills",
     navAbout: "About",
@@ -74,7 +74,7 @@ const translations = {
     navSolutions: "Business software",
     solutionsTitle: "Software concepts for real business workflows",
     solutionsIntro: "Explore interactive prototypes for inventory, field service and invoice workflows. Each demo uses fictional sample data.",
-    inventoryDemoTitle: "Real-time Inventory",
+    inventoryDemoTitle: "Inventory Management",
     inventoryDemoDescription: "Search products, monitor stock levels, flag low inventory and export a sample stock list.",
     serviceDemoTitle: "Field Service Desk",
     serviceDemoDescription: "Create work orders, filter by technician and move jobs through a simple service workflow.",
@@ -85,13 +85,13 @@ const translations = {
     allBusinessDemos: "All business software demos",
     availability: "Open to junior roles, projects & collaborations",
     heroPrefix: "I build",
-    heroHighlight: "Mobile Apps",
+    heroHighlight: "Cross-Platform Software",
     heroSuffix: "with clear architecture and real product focus.",
-    heroIntro: "Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI. From idea and APIs to cloud backends and release-ready apps.",
+    heroIntro: "Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI. From concept and APIs to release-ready software for web, mobile and desktop.",
     viewProjects: "View projects",
     openCv: "Interactive CV App",
-    profileTitle: "Mobile App Developer",
-    statPlatforms: "Mobile platforms",
+    profileTitle: "Cross-Platform Software Developer",
+    statPlatforms: "Target platforms",
     statFlagships: "Flagship projects",
     statArchitecture: "Architecture focus",
     statQuality: "Quality & delivery",
@@ -109,15 +109,15 @@ const translations = {
     moreWork: "More learning, product and architecture projects are available on my GitHub profile.",
     allRepositories: "All repositories",
     skillsTitle: "Technical focus",
-    skillsIntro: "Cross-platform product development with native depth and clear separation between UI, business logic and data access.",
-    flutterSkill: "Cross-platform apps with feature-first structure, Riverpod/Provider, Firebase, Supabase and REST APIs.",
+    skillsIntro: "Cross-platform product development for web, iOS, Android, Windows, macOS and Linux, with clear separation between UI, business logic and data access.",
+    flutterSkill: "Cross-platform apps for web, iOS, Android, Windows, macOS and Linux with feature-first structure, Riverpod/Provider, Firebase, Supabase and REST APIs.",
     androidSkill: "Native Android development with Kotlin, Jetpack Compose, Coroutines/Flow, Room, Retrofit and dependency injection.",
     iosSkill: "Native iOS apps with SwiftUI, MVVM, Swift Concurrency, SwiftData, Firebase and REST integrations.",
     engineeringTitle: "Engineering",
     engineeringSkill: "Clean architecture, Git workflows, tests, CI/CD, API integration and release-oriented product development.",
     aboutTitle: "Product thinking, not just building screens.",
     aboutLead: "I build apps with the goal of aligning architecture, user experience and real product requirements.",
-    aboutText1: "My focus is mobile development across Flutter, Android and iOS. I work with MVVM, repository patterns, use cases, API integrations and cloud backends while keeping responsibilities in the codebase explicit and maintainable.",
+    aboutText1: "My focus is cross-platform product development with Flutter, plus native Kotlin/Jetpack Compose and Swift/SwiftUI when platform-specific capabilities call for it. I work with MVVM, repository patterns, use cases, API integrations and cloud backends.",
     aboutText2: "I am especially motivated by products with practical value: applications that simplify processes, make information easier to understand or directly support people in everyday life.",
     principleArchitecture: "Architecture",
     principleArchitectureText: "Clear responsibilities and maintainable code.",
@@ -129,7 +129,7 @@ const translations = {
     contactTitle: "Do you have a product that needs a strong app?",
     contactText: "I am open to junior/entry-level positions, startup teams, freelance projects and technical collaborations.",
     writeEmail: "Send an email",
-    footerRole: "Mobile App Developer · Berlin"
+    footerRole: "Cross-Platform Software Developer · Berlin"
   }
 };
 
@@ -144,6 +144,7 @@ function applyLanguage(nextLanguage) {
   language = translations[nextLanguage] ? nextLanguage : "de";
   document.documentElement.lang = language;
   localStorage.setItem("portfolio-language", language);
+  localStorage.setItem("business-demo-language", language);
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
@@ -161,6 +162,8 @@ function applyLanguage(nextLanguage) {
     language === "de" ? "Sprache auf Englisch wechseln" : "Switch language to German"
   );
 }
+
+window.addEventListener("storage", (event) => { if (event.key === "business-demo-language" && translations[event.newValue]) applyLanguage(event.newValue); });
 
 languageToggle?.addEventListener("click", () => {
   applyLanguage(language === "de" ? "en" : "de");
