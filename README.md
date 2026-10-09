@@ -77,10 +77,10 @@ If the site is used commercially in Germany, add the legally required provider i
 
 The portfolio also includes three interactive, static prototypes intended to demonstrate business workflows to potential clients:
 
-- **Real-time Inventory** — search and filter sample stock, adjust quantities, identify low-stock items and export CSV.
-- **Field Service Desk** — create work orders, filter by technician and move jobs between workflow states.
-- **Invoice Workspace** — inspect invoice statuses and due dates, add sample invoices, update payment status and export CSV.
+- **Inventory Management** — create, read, edit and delete stock records, adjust quantities, search/filter and export CSV.
+- **Field Service Desk** — create, read, edit and delete work orders, assign technicians, prioritize tasks and move jobs between workflow states.
+- **Invoice Workspace** — create, read, edit and delete invoice records, validate amounts, update statuses, review totals and export CSV.
 
-Open the showcase at `business-solutions.html`. The demos include a persistent German/English language selector, responsive layouts, localized date/currency formatting and localized CSV headers where supported. They run without a backend or paid services and use fictional sample data only. They are not production systems, real customer deployments or legally compliant e-invoice software. A production build would require discovery, backend persistence, authentication/authorization, auditability, security testing and appropriate compliance review.
+Open the showcase at `business-solutions.html`. The demos include a persistent German/English language selector, responsive layouts, localized date/currency formatting and localized CSV headers where supported. Create/read/update/delete workflows are implemented in all three demos. Records persist in the visitor’s browser via localStorage and survive page reloads on that device; there is no cloud sync or shared database. The demos run without a backend or paid services and use fictional sample data only. They are not production systems, real customer deployments or legally compliant e-invoice software. A production build would require discovery, backend persistence, authentication/authorization, auditability, security testing and appropriate compliance review.
 
 The working brand name **NeoJayTech** is still subject to domain and trademark checks; no availability or legal clearance is claimed.
