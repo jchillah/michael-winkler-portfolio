@@ -1,61 +1,72 @@
 (() => {
-  const dictionaries = {
-    de: {
-      languageLabel:"Sprache auswählen", languageGerman:"Deutsch", languageEnglish:"Englisch",
-      portfolio:"Zum Entwicklerportfolio", showcase:"Business Software", eyebrow:"DIGITALE PROZESSE · INTERAKTIVE DEMOS",
-      heroTitle:"Weniger Reibung. Bessere Abläufe.", heroText:"Entdecke, wie maßgeschneiderte Software Bestände, Serviceaufträge und Rechnungsabläufe übersichtlicher machen kann. Die Demos sind bewusst ohne Anmeldung nutzbar.",
-      crossPlatform:"Cross-Platform-Entwicklung", platformsText:"Lösungen für Web, iOS, Android, Windows, macOS und Linux – abhängig von den Anforderungen und den passenden Technologien.",
-      inventoryTitle:"Lager & Bestand", inventoryText:"Bestände prüfen, Engpässe erkennen und Artikelbewegungen nachvollziehen.", inventoryLink:"Lagerdemo öffnen",
-      serviceTitle:"Service & Aufträge", serviceText:"Aufträge erfassen, Zuständigkeiten zuweisen und Arbeitsschritte transparent verfolgen.", serviceLink:"Service-Demo öffnen",
-      invoiceTitle:"Rechnungen & Belege", invoiceText:"Rechnungsstatus, Fälligkeiten und Beträge an einem Ort im Blick behalten.", invoiceLink:"Rechnungsdemo öffnen",
-      prototype:"Prototyp mit Beispieldaten", transparency:"Hinweis zur Demo", transparencyText:"Diese interaktiven Prototypen arbeiten ausschließlich mit fiktiven Beispieldaten im Browser. Sie sind keine produktiven Kundensysteme, speichern keine Daten auf einem Server und erstellen keine rechtskonformen E-Rechnungen. Produktive Lösungen benötigen unter anderem sichere Anmeldung, Rollen- und Rechteverwaltung, persistente Speicherung, Tests, Backups und eine fachliche Compliance-Prüfung.",
-      contact:"Projekt besprechen", contactText:"Du hast einen Prozess, der zu viele Tabellen, manuelle Schritte oder doppelte Dateneingaben benötigt?", contactLink:"Projektidee per E-Mail senden",
-      backToShowcase:"Zur Übersicht", demoData:"DEMO · FIKTIVE DATEN", reset:"Beispieldaten zurücksetzen", export:"CSV exportieren", search:"Suchen…", noResults:"Keine passenden Einträge gefunden.",
-      stockTitle:"Lagerbestand", stockSubtitle:"Ein klarer Überblick über Artikel, Mengen und Nachbestellbedarf.", products:"Artikel", units:"Einheiten auf Lager", lowStock:"Niedriger Bestand", outOfStock:"Ausverkauft", product:"Artikel", sku:"Artikelnummer", location:"Lagerort", quantity:"Menge", status:"Status", allStatuses:"Alle Status", inStock:"Auf Lager", low:"Nachbestellen", out:"Ausverkauft", decrease:"Menge verringern", increase:"Menge erhöhen", quantityUpdated:"Bestand aktualisiert.", resetDone:"Beispieldaten zurückgesetzt.", csvReady:"CSV-Export wird vorbereitet.", stockSearch:"Artikel, Nummer oder Lagerort suchen…", minStock:"Mindestbestand",
-      serviceSubtitle:"Vom Eingang bis zum Abschluss – alle Aufgaben auf einen Blick.", openOrders:"Offene Aufträge", inProgress:"In Bearbeitung", completed:"Abgeschlossen", newOrder:"Neuer Auftrag", createOrder:"Auftrag anlegen", orderTitle:"Auftrag", customer:"Kunde / Standort", technician:"Zuständige Person", priority:"Priorität", normal:"Normal", high:"Hoch", urgent:"Dringend", allTechnicians:"Alle Zuständigen", allOrders:"Alle Aufträge", newStatus:"Neu", progressStatus:"In Bearbeitung", doneStatus:"Abgeschlossen", startWork:"Arbeit beginnen", markComplete:"Als abgeschlossen markieren", reopen:"Wieder öffnen", orderCreated:"Auftrag angelegt.", orderMoved:"Auftragsstatus aktualisiert.", invalidOrder:"Bitte Auftrag und Kunden/Standort angeben.", orderSearch:"Auftrag, Kunde oder Nummer suchen…", resetOrders:"Aufträge zurückgesetzt.",
-      invoiceSubtitle:"Fälligkeiten und Zahlungsstatus übersichtlich verwalten.", outstanding:"Offener Betrag", paidTotal:"Bezahlt gesamt", overdueCount:"Überfällige Rechnungen", invoiceCount:"Rechnungen", createInvoice:"Rechnung erfassen", addInvoice:"Beispielrechnung hinzufügen", invoiceNo:"Rechnungsnummer", dueDate:"Fällig am", amount:"Betrag", invoiceStatus:"Zahlungsstatus", allInvoiceStatuses:"Alle Status", draft:"Entwurf", due:"Offen", paid:"Bezahlt", overdue:"Überfällig", markPaid:"Als bezahlt markieren", markDue:"Als offen markieren", invoiceCreated:"Beispielrechnung angelegt.", invalidAmount:"Bitte einen gültigen Betrag größer als null eingeben.", invalidInvoice:"Bitte Kundennamen und Fälligkeitsdatum eingeben.", invoiceSearch:"Rechnungsnummer oder Kunde suchen…", resetInvoices:"Rechnungen zurückgesetzt.", dueDateHelp:"Fälligkeitsdatum", invoiceDisclaimer:"Nur Demonstration: Keine Buchhaltung, Zahlung, Steuerberechnung oder rechtskonforme E-Rechnungserstellung angebunden.",
-      empty:"Keine Einträge vorhanden.", sampleOnly:"Nur Beispieldaten", languageChanged:"Sprache geändert"
-    },
-    en: {
-      languageLabel:"Choose language", languageGerman:"German", languageEnglish:"English",
-      portfolio:"Developer portfolio", showcase:"Business software", eyebrow:"DIGITAL WORKFLOWS · INTERACTIVE DEMOS",
-      heroTitle:"Less friction. Better workflows.", heroText:"Explore how tailored software can make inventory, service orders and invoice workflows clearer. These demos are intentionally available without sign-in.",
-      crossPlatform:"Cross-platform development", platformsText:"Solutions for web, iOS, Android, Windows, macOS and Linux—depending on requirements and the right technology choices.",
-      inventoryTitle:"Inventory & stock", inventoryText:"Review stock, spot shortages and keep track of item quantities.", inventoryLink:"Open inventory demo",
-      serviceTitle:"Service & work orders", serviceText:"Capture jobs, assign ownership and follow work through a transparent process.", serviceLink:"Open service demo",
-      invoiceTitle:"Invoices & documents", invoiceText:"Keep invoice status, due dates and amounts in one clear workspace.", invoiceLink:"Open invoice demo",
-      prototype:"Prototype with sample data", transparency:"Demo limitations", transparencyText:"These interactive prototypes use fictional sample data in your browser only. They are not production customer systems, do not store data on a server and do not generate legally compliant e-invoices. Production solutions require secure authentication, role-based access, persistent storage, testing, backups and domain-specific compliance review.",
-      contact:"Discuss a project", contactText:"Have a process that relies on too many spreadsheets, manual steps or duplicate data entry?", contactLink:"Send a project idea by email",
-      backToShowcase:"All concepts", demoData:"DEMO · FICTIONAL DATA", reset:"Reset sample data", export:"Export CSV", search:"Search…", noResults:"No matching records found.",
-      stockTitle:"Inventory overview", stockSubtitle:"A clear view of items, quantities and what needs replenishing.", products:"Products", units:"Units in stock", lowStock:"Low-stock items", outOfStock:"Out of stock", product:"Product", sku:"SKU", location:"Location", quantity:"Quantity", status:"Status", allStatuses:"All stock states", inStock:"In stock", low:"Reorder", out:"Out of stock", decrease:"Decrease quantity", increase:"Increase quantity", quantityUpdated:"Stock updated.", resetDone:"Sample data reset.", csvReady:"Preparing CSV export.", stockSearch:"Search product, SKU or location…", minStock:"Minimum stock",
-      serviceSubtitle:"From intake to completion—all work orders in one view.", openOrders:"Open orders", inProgress:"In progress", completed:"Completed", newOrder:"New work order", createOrder:"Create work order", orderTitle:"Work order", customer:"Customer / site", technician:"Assigned to", priority:"Priority", normal:"Normal", high:"High", urgent:"Urgent", allTechnicians:"All assignees", allOrders:"All orders", newStatus:"New", progressStatus:"In progress", doneStatus:"Completed", startWork:"Start work", markComplete:"Mark completed", reopen:"Reopen", orderCreated:"Work order created.", orderMoved:"Work order status updated.", invalidOrder:"Please enter a work order and customer/site.", orderSearch:"Search order, customer or ID…", resetOrders:"Work orders reset.",
-      invoiceSubtitle:"Manage due dates and payment status in one clear view.", outstanding:"Outstanding amount", paidTotal:"Total paid", overdueCount:"Overdue invoices", invoiceCount:"Invoices", createInvoice:"Add invoice", addInvoice:"Add sample invoice", invoiceNo:"Invoice number", dueDate:"Due date", amount:"Amount", invoiceStatus:"Payment status", allInvoiceStatuses:"All statuses", draft:"Draft", due:"Due", paid:"Paid", overdue:"Overdue", markPaid:"Mark as paid", markDue:"Mark as due", invoiceCreated:"Sample invoice added.", invalidAmount:"Enter a valid amount greater than zero.", invalidInvoice:"Please enter a customer and due date.", invoiceSearch:"Search invoice number or customer…", resetInvoices:"Invoices reset.", dueDateHelp:"Due date", invoiceDisclaimer:"Demo only: no accounting, payment, tax calculation or compliant e-invoice generation is connected.",
-      empty:"No records available.", sampleOnly:"Sample data only", languageChanged:"Language changed"
-    }
+  const phrases = {
+    "Business Software Concepts":"Business-Software-Konzepte","Business software concepts":"Business-Software-Konzepte",
+    "Your business.":"Dein Unternehmen.","Smarter software.":"Intelligentere Software.","Your business. Smarter software.":"Dein Unternehmen. Intelligentere Software.",
+    "Business software · Concept lab":"Businesssoftware · Konzeptlabor","Business software / Demo data":"Businesssoftware / Beispieldaten",
+    "Practical software concepts for teams that need fewer spreadsheets, clearer processes and reliable information. Explore the interactive demos below, built with sample data to illustrate possible workflows.":"Praktische Softwarekonzepte für Teams, die weniger Tabellen, klarere Prozesse und zuverlässige Informationen benötigen. Entdecke die interaktiven Demos mit Beispieldaten.",
+    "Interactive software concept demos":"Interaktive Softwarekonzepte","Real-time Inventory":"Echtzeit-Inventar","Field Service Desk":"Service- und Auftragsverwaltung","Invoice Workspace":"Rechnungsübersicht",
+    "Track stock levels, spot low inventory, search products and adjust quantities from a simple operations dashboard.":"Bestände prüfen, Engpässe erkennen, Produkte suchen und Mengen in einer übersichtlichen Verwaltung anpassen.",
+    "Coordinate work orders, assign technicians and move jobs through a transparent service workflow.":"Arbeitsaufträge koordinieren, Mitarbeitende zuweisen und Aufgaben transparent durch den Serviceprozess führen.",
+    "Review invoice status, track due dates and create sample records in a compact finance workspace.":"Rechnungsstatus und Fälligkeiten prüfen und Beispieldatensätze in einer kompakten Finanzübersicht anlegen.",
+    "Inventory":"Lagerbestand","Stock alerts":"Bestandswarnungen","Operations":"Betrieb","Work orders":"Arbeitsaufträge","Scheduling":"Planung","Mobile workflows":"Mobile Abläufe","Invoices":"Rechnungen","Document flow":"Dokumentenablauf","SME tools":"KMU-Werkzeuge",
+    "Explore inventory demo ↗":"Lagerdemo öffnen ↗","Explore service demo ↗":"Servicedemo öffnen ↗","Explore invoice demo ↗":"Rechnungsdemo öffnen ↗","All business software concepts":"Alle Business-Software-Konzepte",
+    "Prototype transparency:":"Transparenz zum Prototyp:","These are portfolio concepts, not production systems or paid client deployments. All names, amounts and records are fictional sample data. No backend, payment processing or legally compliant e-invoice generation is connected. Production implementations require requirements discovery, security review, persistence, access control and appropriate compliance validation.":"Dies sind Portfolio-Prototypen, keine Produktivsysteme oder bezahlten Kundenprojekte. Namen, Beträge und Datensätze sind fiktiv. Es gibt kein Backend, keine Zahlungsabwicklung und keine rechtskonforme E-Rechnungserstellung. Produktive Lösungen benötigen Anforderungsanalyse, Sicherheitsprüfung, persistente Speicherung, Zugriffsrechte und Compliance-Prüfung.",
+    "Discuss a project ↗":"Projekt besprechen ↗","Developer portfolio ↗":"Entwicklerportfolio ↗","Custom mobile & business software":"Individuelle Mobile- und Unternehmenssoftware",
+    "Stockroom":"Lagerverwaltung","Inventory":"Bestand","DEMO · Sample data":"DEMO · Beispieldaten","See what is available, what needs attention and what changed.":"Sieh, was verfügbar ist, was Aufmerksamkeit braucht und was sich geändert hat.",
+    "Tracked SKUs":"Verfolgte Artikel","Units in stock":"Einheiten auf Lager","Low-stock items":"Artikel mit niedrigem Bestand","Out of stock":"Ausverkauft","Search product or SKU…":"Produkt oder Artikelnummer suchen…","All stock states":"Alle Bestandsstatus","Low stock":"Niedriger Bestand","In stock":"Auf Lager","Reset sample data":"Beispieldaten zurücksetzen","Product":"Produkt","SKU":"Artikelnummer","Location":"Lagerort","Stock":"Bestand","Status":"Status","No matching items.":"Keine passenden Artikel gefunden.","Sample data only · Changes stay in this browser session and are not saved to a server.":"Nur Beispieldaten · Änderungen bleiben in dieser Browsersitzung und werden nicht auf einem Server gespeichert.",
+    "Decrease ":"Verringern: ","Increase ":"Erhöhen: ","In stock":"Auf Lager","Low stock":"Niedriger Bestand","Stock updated":"Bestand aktualisiert","Sample data reset":"Beispieldaten zurückgesetzt","Preparing CSV export":"CSV-Export wird vorbereitet",
+    "Service operations / Demo data":"Serviceverwaltung / Beispieldaten","Keep every work order visible from intake to completion.":"Behalte jeden Arbeitsauftrag vom Eingang bis zum Abschluss im Blick.",
+    "Open work orders":"Offene Aufträge","In progress":"In Bearbeitung","Completed work orders":"Abgeschlossene Aufträge","New work order":"Neuer Arbeitsauftrag","Work order title":"Titel des Arbeitsauftrags","Customer / site":"Kunde / Standort","Technician":"Zuständig","Priority":"Priorität","Normal":"Normal","High":"Hoch","Urgent":"Dringend","Create work order":"Arbeitsauftrag erstellen","Search work orders…":"Arbeitsaufträge suchen…","All technicians":"Alle Zuständigen","Reset sample data":"Beispieldaten zurücksetzen","New":"Neu","Completed":"Abgeschlossen","Start work":"Arbeit beginnen","Mark completed":"Als abgeschlossen markieren","Reopen work order":"Arbeitsauftrag wieder öffnen","No matching work orders.":"Keine passenden Arbeitsaufträge gefunden.","Fictional records for demonstration only. Updates are held in page memory and are not sent to a server.":"Nur fiktive Beispieldaten. Änderungen bleiben im Seitenspeicher und werden nicht an einen Server übertragen.",
+    "Work order created":"Arbeitsauftrag erstellt","moved to":"geändert zu","Work order status updated":"Status des Arbeitsauftrags aktualisiert","Sample data reset":"Beispieldaten zurückgesetzt",
+    "Finance operations / Demo data":"Finanzverwaltung / Beispieldaten","A clear view of invoice status, amounts and due dates.":"Eine klare Übersicht über Rechnungsstatus, Beträge und Fälligkeiten.",
+    "Outstanding amount":"Offener Betrag","Total paid":"Insgesamt bezahlt","Overdue invoices":"Überfällige Rechnungen","Invoices tracked":"Verfolgte Rechnungen","Create invoice":"Rechnung erfassen","Customer name":"Kundenname","Amount (€)":"Betrag (€)","Due date":"Fälligkeitsdatum","Invoice status":"Rechnungsstatus","Add sample invoice":"Beispielrechnung hinzufügen","Search invoice or customer…":"Rechnung oder Kunde suchen…","All statuses":"Alle Status","Draft":"Entwurf","Due":"Offen","Paid":"Bezahlt","Overdue":"Überfällig","Invoice":"Rechnung","Customer":"Kunde","Amount":"Betrag","Action":"Aktion","Mark due":"Als offen markieren","Mark paid":"Als bezahlt markieren","No matching invoices.":"Keine passenden Rechnungen gefunden.",
+    "Concept prototype only. It does not generate or transmit legally compliant e-invoices and is not connected to accounting, tax or payment systems.":"Nur ein Konzeptprototyp. Er erstellt oder übermittelt keine rechtskonformen E-Rechnungen und ist nicht mit Buchhaltung, Steuer- oder Zahlungssystemen verbunden.",
+    "Invoice added":"Rechnung hinzugefügt","marked paid":"als bezahlt markiert","marked due":"als offen markiert","Enter a valid amount greater than zero":"Gib einen gültigen Betrag größer als null ein","Sample invoice added":"Beispielrechnung hinzugefügt",
+    "Language":"Sprache","Choose language":"Sprache auswählen","German":"Deutsch","English":"Englisch","Back to all business software concepts":"Zurück zu allen Business-Software-Konzepten",
+    "All business software demos":"Alle Business-Software-Demos","Explore interactive prototypes for inventory, field service and invoice workflows. Each demo uses fictional sample data.":"Entdecke interaktive Prototypen für Lager, Service und Rechnungsabläufe. Alle Demos verwenden fiktive Beispieldaten.",
+    "Mobile App Developer":"Cross-Platform Software Developer","Mobile platforms":"Plattformen","I build":"Ich entwickle","Mobile Apps":"Cross-Platform-Software","with clear architecture and real product focus.":"mit klarer Architektur und echtem Produktfokus.",
+    "Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI. From idea and APIs to cloud backends and release-ready apps.":"Flutter · Kotlin / Jetpack Compose · Swift / SwiftUI. Von der Idee über APIs und Cloud-Backends bis zu releasefähigen Anwendungen für Web, Mobile und Desktop.",
+    "Cross-platform apps with feature-first structure, Riverpod/Provider, Firebase, Supabase and REST APIs.":"Cross-Platform-Apps mit Feature-first-Struktur, Riverpod/Provider, Firebase, Supabase und REST-APIs.",
+    "My focus is mobile development across Flutter, Android and iOS.":"Mein Schwerpunkt ist plattformübergreifende Entwicklung für Mobile, Web und Desktop."
   };
-  const allowed = ["de","en"];
-  let current = "de";
-  try {
-    const saved = localStorage.getItem("business-demo-language");
-    current = allowed.includes(saved) ? saved : (navigator.language?.toLowerCase().startsWith("de") ? "de" : "en");
-  } catch (_) { current = navigator.language?.toLowerCase().startsWith("de") ? "de" : "en"; }
-  function t(key) { return dictionaries[current]?.[key] ?? dictionaries.en[key] ?? key; }
-  function apply(next) {
-    current = allowed.includes(next) ? next : "de";
-    try { localStorage.setItem("business-demo-language", current); } catch (_) {}
-    document.documentElement.lang = current;
-    document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
-    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
-    document.querySelectorAll("[data-i18n-aria-label]").forEach(el => { el.setAttribute("aria-label", t(el.dataset.i18nAriaLabel)); });
-    document.querySelectorAll("[data-i18n-title]").forEach(el => { el.title = t(el.dataset.i18nTitle); });
-    document.querySelectorAll("[data-language-switch]").forEach(el => { el.value = current; el.setAttribute("aria-label", t("languageLabel")); });
-    const title = document.querySelector("title[data-i18n]");
-    if (title) document.title = t(title.dataset.i18n);
-    document.dispatchEvent(new CustomEvent("business-language-change", {detail:{language:current}}));
+  const reverse = Object.fromEntries(Object.entries(phrases).map(([en,de]) => [de,en]));
+  let language = "de";
+  try { const saved = localStorage.getItem("business-demo-language"); language = saved === "de" || saved === "en" ? saved : (navigator.language?.toLowerCase().startsWith("de") ? "de" : "en"); } catch (_) { language = navigator.language?.toLowerCase().startsWith("de") ? "de" : "en"; }
+  function translateTextNode(node) {
+    if (!node || !node.nodeValue || !node.parentElement) return;
+    if (node.parentElement.closest("script,style,noscript,code,pre")) return;
+    const original=node.nodeValue, trimmed=original.trim();
+    if (!trimmed) return;
+    const translated = language === "de" ? phrases[trimmed] : reverse[trimmed];
+    if (translated) node.nodeValue=original.replace(trimmed,translated);
   }
-  window.businessI18n = { t, apply, get language(){return current;}, formatDate(value) { return new Intl.DateTimeFormat(current === "de" ? "de-DE" : "en-GB").format(new Date(value + "T12:00:00")); }, formatMoney(value) { return new Intl.NumberFormat(current === "de" ? "de-DE" : "en-IE", {style:"currency",currency:"EUR"}).format(value); } };
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("[data-language-switch]").forEach(el => el.addEventListener("change", () => apply(el.value)));
-    apply(current);
+  function translateTree(root=document.body) {
+    if (!root) return;
+    const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+    const nodes=[]; while(walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(translateTextNode);
+    root.querySelectorAll?.("[placeholder],[aria-label],[title]").forEach(el=>{
+      for (const attr of ["placeholder","aria-label","title"]) {
+        const val=el.getAttribute(attr); if(!val) continue;
+        const next=language==="de" ? phrases[val] : reverse[val];
+        if(next) el.setAttribute(attr,next);
+      }
+    });
+    root.querySelectorAll?.("[data-language-switch]").forEach(el=>{el.value=language;el.setAttribute("aria-label",language==="de"?"Sprache auswählen":"Choose language");});
+    document.documentElement.lang=language;
+    const title=document.querySelector("title"); if(title){const next=language==="de"?phrases[title.textContent.trim()]:reverse[title.textContent.trim()];if(next)title.textContent=next;}
+  }
+  function apply(next) {
+    language=next==="en"?"en":"de";
+    try{localStorage.setItem("business-demo-language",language);}catch(_){}
+    translateTree();
+    document.dispatchEvent(new CustomEvent("business-language-change",{detail:{language}}));
+  }
+  window.businessI18n={apply,get language(){return language;},t(key){return key;},formatDate(value){return new Intl.DateTimeFormat(language==="de"?"de-DE":"en-GB").format(new Date(value+"T12:00:00"));},formatMoney(value){return new Intl.NumberFormat(language==="de"?"de-DE":"en-IE",{style:"currency",currency:"EUR"}).format(value);}};
+  document.addEventListener("DOMContentLoaded",()=>{
+    document.querySelectorAll("[data-language-switch]").forEach(el=>{el.value=language;el.addEventListener("change",()=>apply(el.value));});
+    translateTree();
+    const observer=new MutationObserver(records=>records.forEach(record=>{record.addedNodes.forEach(node=>{if(node.nodeType===Node.TEXT_NODE)translateTextNode(node);else if(node.nodeType===Node.ELEMENT_NODE)translateTree(node);});}));
+    observer.observe(document.body,{subtree:true,childList:true});
   });
 })();
