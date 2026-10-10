@@ -150,6 +150,7 @@
     ["Language: German", "Sprache: Deutsch"],
     ["Language: English", "Sprache: Englisch"],
     ["Sprache wechseln", "Switch language"],
+    ["UI screens in the source code, including search, details, favourites, settings, statistics and wishlist.", "UI-Screens im Quellcode, darunter Suche, Details, Favoriten, Einstellungen, Statistiken und Wunschliste."],
     ["Software", "Software"],
     ["Michael Winkler", "Michael Winkler"],
     ["Business demos", "Business-Demos"],
