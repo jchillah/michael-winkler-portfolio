@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07110c">
+  <meta name="description" content="ASA Server Eye – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler.">
+  <title>ASA Server Eye | Michael Winkler – Portfolio</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07110c;--panel:#0d1b13;--line:#1e3928;--text:#edf7ef;--muted:#a5b9aa;--accent:#9aa9ff}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#102b1a 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+    .wrap{width:min(1120px,calc(100% - 32px));margin:auto}.nav{padding:22px 0;border-bottom:1px solid var(--line)}.nav a{text-decoration:none;font-weight:700}
+    header{padding:58px 0 36px} .eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-size:.78rem;font-weight:800}
+    h1{font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.08;letter-spacing:-.04em;margin:.45rem 0 1rem}h2{font-size:1.45rem;line-height:1.2}p{color:var(--muted);max-width:76ch}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--text);font-weight:700;background:var(--panel)}.btn.primary{background:var(--accent);color:#07110c;border-color:var(--accent)}
+    .panel{border:1px solid var(--line);background:rgba(13,27,19,.86);border-radius:18px;padding:24px;margin:24px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}.shot{margin:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#09140d}.shot img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#050a07}.shot figcaption{padding:10px 12px;font-size:.88rem;color:var(--muted)}
+    ul{padding-left:1.2rem;color:var(--muted)}li{margin:.4rem 0}.note{border-left:3px solid var(--accent);padding:10px 14px;background:rgba(112,240,160,.07);color:var(--muted)}footer{padding:28px 0 44px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);margin-top:48px}
+    @media(max-width:560px){header{padding:40px 0 24px}.panel{padding:18px}.shots{grid-template-columns:repeat(2,minmax(0,1fr))}.shot img{aspect-ratio:9/16}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="wrap"><a href="./index.html#projects">← Zurück zum Portfolio</a></div></nav>
+  <main class="wrap">
+    <header><span class="eyebrow">Cross-platform · Flutter</span><h1>ASA Server Eye</h1>
+      <p>Flutter-Begleit-App für ARK: Survival Ascended. Das Repository beschreibt die Anzeige offizieller Serverdaten, Suche/Filter, Serverdetails und Favoriten. Weitere Module sind im Quellcode vorhanden; deren produktiver Funktionsstatus wird hier nicht pauschal behauptet.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/jchillah/asa-server-eye" target="_blank" rel="noopener noreferrer">Quellcode ↗</a>
+        <a class="btn" href="https://jchillah.github.io/asa-server-eye-privacy-policy/" target="_blank" rel="noopener noreferrer">Datenschutzerklärung ↗</a>
+      </div>
+    </header>
+    <section class="panel"><h2>Nachprüfbare Projektinformationen</h2><div class="grid">
+      <div><strong>Serverdaten</strong><p>Das Repository dokumentiert die offizielle ASA-Serverliste als Datenquelle.</p></div>
+      <div><strong>Serverorganisation</strong><p>Suche, Filter, Serverdetailansicht und Favoriten werden als Kernfunktionen beschrieben.</p></div>
+      <div><strong>Technik</strong><p>Flutter, Dart, Riverpod, Dio und Firebase-Integration sind im Repository erkennbar.</p></div>
+      <div><strong>Struktur</strong><p>Das Projekt ist in Features wie Auth, Servers, Favorites, Profile und Settings gegliedert.</p></div>
+    </div></section>
+    <section class="panel"><h2>Visuelle Nachweise</h2>
+      <p>Das Repository enthält App-Icons, Logos und Splash-Screen-Grafiken. In der geprüften Dateiliste wurden keine dedizierten Screenshots der laufenden App-Oberfläche gefunden. Deshalb werden hier keine Icons als angebliche App-Screenshots dargestellt.</p>
+      <div class="shots">
+        <figure class="shot"><a href="https://raw.githubusercontent.com/jchillah/asa-server-eye/main/assets/images/ASA_ServerEye.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://raw.githubusercontent.com/jchillah/asa-server-eye/main/assets/images/ASA_ServerEye.png" alt="ASA Server Eye Projektgrafik aus dem Repository"></a><figcaption>Projektgrafik aus dem Repository – kein UI-Screenshot</figcaption></figure>
+      </div>
+    </section>
+    <section class="panel"><h2>Weitere Nachweise</h2><ul>
+      <li><a href="https://github.com/jchillah/asa-server-eye/blob/main/README.md" target="_blank" rel="noopener noreferrer">README mit dokumentiertem Status und Funktionsumfang</a></li>
+      <li><a href="https://github.com/jchillah/asa-server-eye/tree/main/lib/features" target="_blank" rel="noopener noreferrer">Feature-Struktur im Quellcode</a></li>
+    </ul></section>
+</main><footer><div class="wrap">Michael Winkler · <a href="https://github.com/jchillah">GitHub-Profil</a> · <a href="./index.html#projects">Portfolio</a></div></footer></body></html>

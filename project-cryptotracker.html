@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07110c">
+  <meta name="description" content="CryptoTracker – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler.">
+  <title>CryptoTracker | Michael Winkler – Portfolio</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07110c;--panel:#0d1b13;--line:#1e3928;--text:#edf7ef;--muted:#a5b9aa;--accent:#8de6b8}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#102b1a 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+    .wrap{width:min(1120px,calc(100% - 32px));margin:auto}.nav{padding:22px 0;border-bottom:1px solid var(--line)}.nav a{text-decoration:none;font-weight:700}
+    header{padding:58px 0 36px} .eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-size:.78rem;font-weight:800}
+    h1{font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.08;letter-spacing:-.04em;margin:.45rem 0 1rem}h2{font-size:1.45rem;line-height:1.2}p{color:var(--muted);max-width:76ch}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--text);font-weight:700;background:var(--panel)}.btn.primary{background:var(--accent);color:#07110c;border-color:var(--accent)}
+    .panel{border:1px solid var(--line);background:rgba(13,27,19,.86);border-radius:18px;padding:24px;margin:24px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}.shot{margin:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#09140d}.shot img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#050a07}.shot figcaption{padding:10px 12px;font-size:.88rem;color:var(--muted)}
+    ul{padding-left:1.2rem;color:var(--muted)}li{margin:.4rem 0}.note{border-left:3px solid var(--accent);padding:10px 14px;background:rgba(112,240,160,.07);color:var(--muted)}footer{padding:28px 0 44px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);margin-top:48px}
+    @media(max-width:560px){header{padding:40px 0 24px}.panel{padding:18px}.shots{grid-template-columns:repeat(2,minmax(0,1fr))}.shot img{aspect-ratio:9/16}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="wrap"><a href="./index.html#projects">← Zurück zum Portfolio</a></div></nav>
+  <main class="wrap">
+    <header><span class="eyebrow">iOS · Swift · SwiftUI</span><h1>CryptoTracker</h1>
+      <p>Native iOS-App zur Anzeige von Kryptomarkt-Daten und historischen Preisverläufen. Das Repository bezeichnet den Stand als Release Candidate und nennt noch offene Vorbereitungen vor einer App-Store-Veröffentlichung.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/jchillah/CryptoTracker" target="_blank" rel="noopener noreferrer">Quellcode ↗</a>
+        <a class="btn" href="https://github.com/jchillah/CryptoTracker/blob/main/README.md" target="_blank" rel="noopener noreferrer">README / technische Details ↗</a>
+      </div>
+    </header>
+    <section class="panel"><h2>Im Repository dokumentierte Funktionen</h2><div class="grid">
+      <div><strong>Marktdaten</strong><p>Preise, Marktkapitalisierung und 24-Stunden-Daten über CoinGecko; Darstellung in USD, EUR und GBP ist dokumentiert.</p></div>
+      <div><strong>Preisverläufe</strong><p>Historische Charts mit Swift Charts.</p></div>
+      <div><strong>Favoriten & Anmeldung</strong><p>Firebase Authentication und nutzerbezogene Favoriten in Cloud Firestore.</p></div>
+      <div><strong>Lokaler Cache</strong><p>SwiftData speichert Markt- und Chartdaten für einen Offline-Fallback; das ist keine Garantie für alle Funktionen ohne Netz.</p></div>
+      <div><strong>News & Einstellungen</strong><p>Krypto-News aus einem RSS-Feed sowie Dark Mode und Pull-to-Refresh werden im README genannt.</p></div>
+      <div><strong>Technik</strong><p>Swift, SwiftUI, Swift Charts, MVVM, URLSession, Firebase und SwiftData.</p></div>
+    </div><p class="note">Release-Status gemäß README: Release Candidate. Die Seite behauptet keine erfolgte App-Store-Veröffentlichung.</p></section>
+    <section class="panel"><h2>Echte Screenshots aus dem CryptoTracker-Repository</h2><div class="shots">
+      <figure class="shot"><a href="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_1.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_1.png" alt="CryptoTracker Marktübersicht"></a><figcaption>Marktübersicht</figcaption></figure>
+      <figure class="shot"><a href="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_2.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_2.png" alt="CryptoTracker Coin-Details"></a><figcaption>Coin-Details</figcaption></figure>
+      <figure class="shot"><a href="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_3.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_3.png" alt="CryptoTracker Preisdiagramm"></a><figcaption>Preisdiagramm</figcaption></figure>
+      <figure class="shot"><a href="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_4.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_4.png" alt="CryptoTracker Favoriten"></a><figcaption>Favoriten</figcaption></figure>
+      <figure class="shot"><a href="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_5.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_5.png" alt="CryptoTracker News"></a><figcaption>News</figcaption></figure>
+      <figure class="shot"><a href="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_6.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_6.png" alt="CryptoTracker Einstellungen"></a><figcaption>Einstellungen</figcaption></figure>
+      <figure class="shot"><a href="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_7.jpg" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://raw.githubusercontent.com/jchillah/CryptoTracker/main/img/cryptotracker_7.jpg" alt="CryptoTracker Authentifizierung"></a><figcaption>Authentifizierung</figcaption></figure>
+    </div></section>
+</main><footer><div class="wrap">Michael Winkler · <a href="https://github.com/jchillah">GitHub-Profil</a> · <a href="./index.html#projects">Portfolio</a></div></footer></body></html>
