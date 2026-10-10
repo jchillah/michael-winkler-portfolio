@@ -352,7 +352,7 @@
         applyLanguage();
       });
       const lastLink = nav.querySelector("a:last-child");
-      if (lastLink) nav.insertBefore(button, lastLink);
+      if (lastLink) lastLink.parentElement.insertBefore(button, lastLink);
       else nav.appendChild(button);
     }
     button.textContent = language === "de" ? "DE / EN" : "EN / DE";
