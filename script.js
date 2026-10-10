@@ -7,6 +7,14 @@ const translations = {
     navContact: "Kontakt",
     navSolutions: "Business Software",
     solutionsTitle: "Softwarekonzepte für echte Geschäftsprozesse",
+    businessPageEyebrow: "Geschäftslösungen · Interaktive Prototypen",
+    businessPageTitle: "Software, die den Arbeitsalltag einfacher macht.",
+    businessPageIntro: "Entdecke meine interaktiven Konzepte für Inventar, Außendienst und Rechnungsabläufe. Die Demos zeigen meinen Ansatz für Benutzerführung und Arbeitsprozesse – mit fiktiven Beispieldaten und ohne Produktiv-Backend.",
+    businessPageBackHome: "Zur Portfolio-Startseite",
+    businessPageProjectCta: "Eigene Apps und Projekte ansehen",
+    businessPageContactCta: "Eine Geschäftsanwendung besprechen",
+    businessPageNoticeTitle: "Transparenz zu den Demos",
+    businessPageNotice: "Dies sind Portfolio-Prototypen, keine installierten Kundensysteme. Namen, Datensätze und Beträge sind fiktiv. Änderungen werden nur lokal in diesem Browser gespeichert. Die Rechnungsdemo ist keine Buchhaltungssoftware und erstellt keine rechtskonformen E-Rechnungen.",
     solutionsIntro: "Entdecke interaktive Prototypen für Inventar, Außendienst und Rechnungsabläufe. Alle Demos verwenden fiktive Beispieldaten.",
     inventoryDemoTitle: "Echtzeit-Inventar",
     inventoryDemoDescription: "Produkte suchen, Bestände prüfen, niedrige Lagerbestände erkennen und eine Bestandsliste exportieren.",
@@ -72,8 +80,16 @@ const translations = {
     navSkills: "Skills",
     navAbout: "About",
     navContact: "Contact",
-    navSolutions: "Business software",
+    navSolutions: "Geschäftslösungen",
     solutionsTitle: "Software concepts for real business workflows",
+    businessPageEyebrow: "Business solutions · Interactive prototypes",
+    businessPageTitle: "Software that makes everyday work easier.",
+    businessPageIntro: "Explore my interactive concepts for inventory, field service and invoice workflows. The demos show how I approach user experience and business processes, using fictional sample data without a production backend.",
+    businessPageBackHome: "Back to portfolio home",
+    businessPageProjectCta: "Explore my apps and projects",
+    businessPageContactCta: "Discuss a business application",
+    businessPageNoticeTitle: "About these demos",
+    businessPageNotice: "These are portfolio prototypes, not deployed client systems. Names, records and amounts are fictional. Changes are stored only in this browser. The invoice demo is not accounting software and does not generate legally compliant e-invoices.",
     solutionsIntro: "Explore interactive prototypes for inventory, field service and invoice workflows. Each demo uses fictional sample data.",
     inventoryDemoTitle: "Real-time Inventory",
     inventoryDemoDescription: "Search products, monitor stock levels, flag low inventory and export a sample stock list.",
@@ -146,6 +162,11 @@ function applyLanguage(nextLanguage) {
   language = translations[nextLanguage] ? nextLanguage : "de";
   document.documentElement.lang = language;
   localStorage.setItem("portfolio-language", language);
+  if (document.body.dataset.page === "business-solutions") {
+    document.title = language === "de" ? "Geschäftslösungen | Michael Winkler" : "Business Solutions | Michael Winkler";
+    const description = document.querySelector('meta[name="description"]');
+    if (description) description.content = language === "de" ? "Interaktive Softwarekonzepte für Inventarverwaltung, Außendienst und Rechnungsabläufe von Michael Winkler." : "Interactive software concepts for inventory, field service and invoice workflows by Michael Winkler.";
+  }
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
