@@ -149,7 +149,103 @@
     ["Invoice", "Rechnung"],
     ["Language: German", "Sprache: Deutsch"],
     ["Language: English", "Sprache: Englisch"],
-    ["Sprache wechseln", "Switch language"]
+    ["Sprache wechseln", "Switch language"],
+    ["Published on Android", "Veröffentlicht auf Android"],
+    ["Source code ↗", "Quellcode ↗"],
+    ["Project details ↗", "Projekt-Details ↗"],
+    ["← Back to portfolio", "← Zurück zum Portfolio"],
+    ["ASA Server Eye – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler.", "ASA Server Eye — project details, screenshots, verifiable features and source code by Michael Winkler."],
+    ["CryptoTracker – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler.", "CryptoTracker — project details, screenshots, verifiable features and source code by Michael Winkler."],
+    ["GameRadar – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler.", "GameRadar — project details, screenshots, verifiable features and source code by Michael Winkler."],
+    ["Mobile-first invoice tracking workflow prototype by Michael Winkler.", "Mobile-first-Prototyp für Rechnungsverwaltung von Michael Winkler."],
+    ["Mobile-first field service workflow prototype by Michael Winkler.", "Mobile-first-Prototyp für Außendienstabläufe von Michael Winkler."],
+    ["Mobile-first inventory workflow prototype by Michael Winkler.", "Mobile-first-Prototyp für Inventarverwaltung von Michael Winkler."],
+    ["Explore interactive business software prototypes by Michael Winkler: inventory, field service and invoice workflows.", "Entdecke interaktive Business-Software-Prototypen von Michael Winkler: Inventar, Außendienst und Rechnungsabläufe."],
+    ["Ledger — Invoice Workspace Demo", "Ledger — Rechnungsübersicht-Demo"],
+    ["Service Desk — Work Order Demo", "Service Desk — Auftrags-Demo"],
+    ["Stockroom — Inventory Demo", "Lagerverwaltung — Inventar-Demo"],
+    ["Business Software Demos | Michael Winkler", "Business-Software-Demos | Michael Winkler"],
+    ["Back to my portfolio ↗", "Zurück zum Portfolio ↗"],
+    ["What these demos are — and aren't:", "Was diese Demos sind – und was nicht:"],
+    ["Invoice workspace", "Rechnungsübersicht"],
+    ["Field service desk", "Außendienstverwaltung"],
+    ["Inventory management", "Inventarverwaltung"],
+    ["Explore the prototypes", "Prototypen ausprobieren"],
+    ["Software should make daily work easier.", "Software soll die tägliche Arbeit erleichtern."],
+    ["Selected business software concepts", "Ausgewählte Business-Software-Konzepte"],
+    ["Operations / interactive prototype", "Betriebsabläufe / interaktiver Prototyp"],
+    ["← Back to business software concepts", "← Zurück zu den Business-Software-Konzepten"],
+    ["Michael Winkler · GitHub profile · Portfolio", "Michael Winkler · GitHub-Profil · Portfolio"],
+    ["Back to my portfolio ↗", "Zurück zum Portfolio ↗"],
+    ["← Back to portfolio", "← Zurück zum Portfolio"],
+    ["Feature structure in the source code", "Feature-Struktur im Quellcode"],
+    ["README documenting status and feature scope", "README mit dokumentiertem Status und Funktionsumfang"],
+    ["Additional evidence", "Weitere Nachweise"],
+    ["Project graphic from the repository — not a UI screenshot", "Projektgrafik aus dem Repository – kein UI-Screenshot"],
+    ["No dedicated screenshots of the running app interface were found in the reviewed file list. Therefore, icons are not presented here as if they were app screenshots.", "In der geprüften Dateiliste wurden keine dedizierten Screenshots der laufenden App-Oberfläche gefunden. Deshalb werden hier keine Icons als angebliche App-Screenshots dargestellt."],
+    ["The repository contains app icons, logos and splash screen graphics.", "Das Repository enthält App-Icons, Logos und Splash-Screen-Grafiken."],
+    ["Visual evidence", "Visuelle Nachweise"],
+    ["I structured the source code by feature areas such as Auth, Servers, Favorites, Profile and Settings.", "Ich habe den Quellcode nach Funktionsbereichen wie Auth, Servers, Favorites, Profile und Settings strukturiert."],
+    ["Structure", "Struktur"],
+    ["I used Flutter and Dart for the app, along with Riverpod, Dio and Firebase integration in the project.", "Ich habe Flutter und Dart für die App sowie Riverpod, Dio und Firebase-Integration im Projekt eingesetzt."],
+    ["I implemented a favourites feature for saving and managing servers.", "Ich habe eine Favoritenfunktion zum Speichern und Verwalten von Servern umgesetzt."],
+    ["I integrated the official ASA server list as the data source.", "Ich habe die offizielle ASA-Serverliste als Datenquelle eingebunden."],
+    ["Server data", "Serverdaten"],
+    ["Verifiable project information", "Nachprüfbare Projektinformationen"],
+    ["I developed ASA Server Eye through to its Google Play release. The released functionality described here covers the live server overview and favourites.", "Ich habe ASA Server Eye bis zur Veröffentlichung im Google Play Store entwickelt. Der veröffentlichte Funktionsumfang, auf den ich mich hier beziehe, umfasst die Live-Serverübersicht und Favoriten."],
+    ["Released on Android", "Veröffentlicht auf Android"],
+    ["Open on Google Play ↗", "Bei Google Play öffnen ↗"],
+    ["I developed ASA Server Eye with Flutter and published it on Google Play for Android. The app helps ARK: Survival Ascended players review server information and manage favourites.", "Ich habe ASA Server Eye mit Flutter entwickelt und im Google Play Store für Android veröffentlicht. Die App hilft Spielern von ARK: Survival Ascended, Serverdaten zu überblicken und Favoriten zu verwalten."],
+    ["Cross-platform · Flutter", "Cross-platform · Flutter"],
+    ["Authentication", "Authentifizierung"],
+    ["Settings", "Einstellungen"],
+    ["Favourites", "Favoriten"],
+    ["Price chart", "Preisdiagramm"],
+    ["Coin details", "Coin-Details"],
+    ["Market overview", "Marktübersicht"],
+    ["Actual screenshots from the CryptoTracker repository", "Echte Screenshots aus dem CryptoTracker-Repository"],
+    ["I have not released this project. The screenshots show the development state, not an app available on the App Store.", "Ich habe dieses Projekt nicht veröffentlicht. Die Screenshots zeigen den Entwicklungsstand und keine im App Store verfügbare App."],
+    ["I used Swift, SwiftUI, Swift Charts, URLSession, Firebase and SwiftData, structuring the interface around MVVM.", "Ich habe dafür Swift, SwiftUI, Swift Charts, URLSession, Firebase und SwiftData eingesetzt und die Oberfläche nach dem MVVM-Ansatz strukturiert."],
+    ["I included a cryptocurrency news section based on an RSS feed, as well as dark mode and pull-to-refresh.", "Ich habe einen Bereich für Krypto-News aus einem RSS-Feed sowie Dark Mode und Pull-to-Refresh vorgesehen."],
+    ["News & settings", "News & Einstellungen"],
+    ["This does not guarantee that all features are available without an internet connection.", "Das garantiert nicht, dass alle Funktionen ohne Internetzugang verfügbar sind."],
+    ["I use SwiftData to cache market and chart data locally.", "Ich nutze SwiftData, um Markt- und Chartdaten lokal zwischenzuspeichern."],
+    ["Local cache", "Lokaler Cache"],
+    ["I integrated Firebase Authentication and user-specific favourites in Cloud Firestore.", "Ich habe Firebase Authentication und nutzerbezogene Favoriten in Cloud Firestore integriert."],
+    ["Favourites & sign-in", "Favoriten & Anmeldung"],
+    ["I visualized historical price movements with Swift Charts.", "Ich habe historische Preisverläufe mit Swift Charts visualisiert."],
+    ["Price history", "Preisverläufe"],
+    ["I integrated CoinGecko for prices, market capitalization and 24-hour data, with display options for USD, EUR and GBP.", "Ich habe CoinGecko für Preise, Marktkapitalisierung und 24-Stunden-Daten angebunden und die Darstellung in USD, EUR und GBP vorgesehen."],
+    ["Market data", "Marktdaten"],
+    ["README / technical details ↗", "README / technische Details ↗"],
+    ["I developed CryptoTracker as a native iOS project for cryptocurrency market data and historical price charts. The project has not been released and is not available on the App Store.", "Ich habe CryptoTracker als natives iOS-Projekt für Kryptomarktdaten und historische Preisverläufe entwickelt. Das Projekt wurde nicht veröffentlicht und ist nicht im App Store verfügbar."],
+    ["iOS · Swift · SwiftUI", "iOS · Swift · SwiftUI"],
+    ["GitHub profile", "GitHub-Profil"],
+    ["GitHub release v1.0.0 with the APK files published there.", "GitHub-Release v1.0.0 mit den dort veröffentlichten APK-Dateien."],
+    ["UI screens in the source code", "UI-Screens im Quellcode"],
+    ["Gradle configuration for dependencies and the Android build.", "Gradle-Konfiguration für Abhängigkeiten und Android-Build."],
+    ["Technical evidence", "Technische Nachweise"],
+    ["Repository screenshot: screen4.png", "Repository-Screenshot: screen4.png"],
+    ["Repository screenshot: screen3.png", "Repository-Screenshot: screen3.png"],
+    ["Repository screenshot: screen2.png", "Repository-Screenshot: screen2.png"],
+    ["Repository screenshot: screen1.png", "Repository-Screenshot: screen1.png"],
+    ["Actual screenshots from the GameRadar repository", "Echte Screenshots aus dem GameRadar-Repository"],
+    ["I store favourites and selected detail data locally. Online search through the external data source is therefore not fully available offline.", "Ich speichere Favoriten und bestimmte Detaildaten lokal. Die Online-Suche über die externe Datenquelle ist dadurch nicht vollständig offline verfügbar."],
+    ["I use Kotlin, Jetpack Compose, Room, Retrofit and Koin; the app follows MVVM/MVI principles.", "Dafür verwende ich Kotlin, Jetpack Compose, Room, Retrofit und Koin; die App orientiert sich an MVVM/MVI."],
+    ["I added a statistics section for the personal game collection.", "Ich habe einen Statistikbereich für die persönliche Spielesammlung ergänzt."],
+    ["Statistics", "Statistiken"],
+    ["I added JSON import and export for favourites and the wishlist.", "Ich habe Import und Export von Favoriten und Wunschliste über JSON ergänzt."],
+    ["Export and import", "Export und Import"],
+    ["I developed game detail views with metadata and components for screenshot and trailer galleries.", "Ich habe Detailansichten für Spiele mit Metadaten sowie Komponenten für Screenshot- und Trailer-Galerien entwickelt."],
+    ["Detail views", "Detailansichten"],
+    ["I implemented favourites and a wishlist with local storage using Room.", "Ich habe Favoriten und Wunschliste mit lokaler Speicherung über Room umgesetzt."],
+    ["Personal lists", "Persönliche Listen"],
+    ["I integrated the RAWG API and implemented filters for platform, genre, rating and release date.", "Ich habe die RAWG-API angebunden und Filter für Plattform, Genre, Bewertung und Veröffentlichungsdatum umgesetzt."],
+    ["Game search", "Spielesuche"],
+    ["What I implemented", "Was ich umgesetzt habe"],
+    ["GitHub APK ↗", "GitHub-APK ↗"],
+    ["GameRadar pitch deck ↗", "GameRadar-Pitchdeck ↗"],
+    ["I developed GameRadar as a native Android app for searching, filtering and organizing video games in personal lists. I provide an APK through a GitHub release; the app is not published on Google Play.", "Ich habe GameRadar als native Android-App entwickelt, mit der sich Videospiele suchen, filtern und in persönlichen Listen organisieren lassen. Eine APK stelle ich als GitHub-Release bereit; eine Veröffentlichung im Google Play Store gibt es nicht."]
   ];
   const enToDe = new Map(pairs);
   const deToEn = new Map(pairs.map(([en, de]) => [de, en]));
@@ -169,8 +265,14 @@
     if (!text) return value;
     const map = language === "de" ? enToDe : deToEn;
     const replacement = map.get(text);
-    if (replacement === undefined) return value;
-    return value.replace(text, replacement);
+    if (replacement !== undefined) return value.replace(text, replacement);
+    const patterns = language === "de"
+      ? [[/^Delete work order (.+)[?]$/, "Arbeitsauftrag $1 löschen?"], [/^Delete (.+)[?]$/, "Löschen: $1?"], [/^WO-(\\d+) updated$/, "WO-$1 aktualisiert"]]
+      : [[/^Arbeitsauftrag (.+) löschen[?]$/, "Delete work order $1?"], [/^Löschen: (.+)[?]$/, "Delete $1?"], [/^WO-(\\d+) aktualisiert$/, "WO-$1 updated"]];
+    for (const [pattern, template] of patterns) {
+      if (pattern.test(text)) return value.replace(text, text.replace(pattern, template));
+    }
+    return value;
   }
 
   function translateNode(node) {
@@ -191,7 +293,7 @@
       if (next !== el.textContent) el.textContent = next;
       el.value = original;
     }
-    for (const attr of ["placeholder", "aria-label", "title"]) {
+    for (const attr of ["placeholder", "aria-label", "title", "alt", "content"]) {
       if (el.hasAttribute(attr)) {
         const old = el.getAttribute(attr);
         const next = translated(old);
