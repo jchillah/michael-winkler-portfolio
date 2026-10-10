@@ -2,6 +2,11 @@
   "use strict";
   const pairs = [
     ["Back to my portfolio ↗", "Zurück zum Portfolio ↗"],
+    ["← Back to portfolio", "← Zurück zum Portfolio"],
+    ["Projects", "Projekte"],
+    ["About", "Über mich"],
+    ["Geschäftslösungen", "Business solutions"],
+    ["Business solutions", "Geschäftslösungen"],
     ["All concepts ↗", "Alle Konzepte ↗"],
     ["All business solutions ↗", "Alle Geschäftslösungen ↗"],
     ["Portfolio home", "Portfolio-Startseite"],
