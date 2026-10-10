@@ -154,17 +154,17 @@
     ["Source code ↗", "Quellcode ↗"],
     ["Project details ↗", "Projekt-Details ↗"],
     ["← Back to portfolio", "← Zurück zum Portfolio"],
-    ["ASA Server Eye — project details, screenshots, verifiable features and source code by Michael Winkler.", "ASA Server Eye – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler."],
-    ["CryptoTracker — project details, screenshots, verifiable features and source code by Michael Winkler.", "CryptoTracker – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler."],
-    ["GameRadar — project details, screenshots, verifiable features and source code by Michael Winkler.", "GameRadar – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler."],
-    ["Mobile-first-Prototyp für Rechnungsverwaltung von Michael Winkler.", "Mobile-first invoice tracking workflow prototype by Michael Winkler."],
-    ["Mobile-first-Prototyp für Außendienstabläufe von Michael Winkler.", "Mobile-first field service workflow prototype by Michael Winkler."],
-    ["Mobile-first-Prototyp für Inventarverwaltung von Michael Winkler.", "Mobile-first inventory workflow prototype by Michael Winkler."],
-    ["Entdecke interaktive Business-Software-Prototypen von Michael Winkler: Inventar, Außendienst und Rechnungsabläufe.", "Explore interactive business software prototypes by Michael Winkler: inventory, field service and invoice workflows."],
-    ["Ledger — Rechnungsübersicht-Demo", "Ledger — Invoice Workspace Demo"],
-    ["Service Desk — Auftrags-Demo", "Service Desk — Work Order Demo"],
-    ["Lagerverwaltung — Inventar-Demo", "Stockroom — Inventory Demo"],
-    ["Business-Software-Demos | Michael Winkler", "Business Software Demos | Michael Winkler"],
+    ["ASA Server Eye – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler.", "ASA Server Eye — project details, screenshots, verifiable features and source code by Michael Winkler."],
+    ["CryptoTracker – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler.", "CryptoTracker — project details, screenshots, verifiable features and source code by Michael Winkler."],
+    ["GameRadar – Projektdetails, Screenshots, nachprüfbare Funktionen und Quellcode von Michael Winkler.", "GameRadar — project details, screenshots, verifiable features and source code by Michael Winkler."],
+    ["Mobile-first invoice tracking workflow prototype by Michael Winkler.", "Mobile-first-Prototyp für Rechnungsverwaltung von Michael Winkler."],
+    ["Mobile-first field service workflow prototype by Michael Winkler.", "Mobile-first-Prototyp für Außendienstabläufe von Michael Winkler."],
+    ["Mobile-first inventory workflow prototype by Michael Winkler.", "Mobile-first-Prototyp für Inventarverwaltung von Michael Winkler."],
+    ["Explore interactive business software prototypes by Michael Winkler: inventory, field service and invoice workflows.", "Entdecke interaktive Business-Software-Prototypen von Michael Winkler: Inventar, Außendienst und Rechnungsabläufe."],
+    ["Ledger — Invoice Workspace Demo", "Ledger — Rechnungsübersicht-Demo"],
+    ["Service Desk — Work Order Demo", "Service Desk — Auftrags-Demo"],
+    ["Stockroom — Inventory Demo", "Lagerverwaltung — Inventar-Demo"],
+    ["Business Software Demos | Michael Winkler", "Business-Software-Demos | Michael Winkler"],
     ["Back to my portfolio ↗", "Zurück zum Portfolio ↗"],
     ["What these demos are — and aren't:", "Was diese Demos sind – und was nicht:"],
     ["Invoice workspace", "Rechnungsübersicht"],
@@ -267,8 +267,8 @@
     const replacement = map.get(text);
     if (replacement !== undefined) return value.replace(text, replacement);
     const patterns = language === "de"
-      ? [[/^Delete (.+)\\?$/, "Löschen: $1?"], [/^Delete work order (.+)\\?$/, "Arbeitsauftrag $1 löschen?"], [/^WO-(\\d+) updated$/, "WO-$1 aktualisiert"]]
-      : [[/^Löschen: (.+)\\?$/, "Delete $1?"], [/^Arbeitsauftrag (.+) löschen\\?$/, "Delete work order $1?"], [/^WO-(\\d+) aktualisiert$/, "WO-$1 updated"]];
+      ? [[/^Delete work order (.+)[?]$/, "Arbeitsauftrag $1 löschen?"], [/^Delete (.+)[?]$/, "Löschen: $1?"], [/^WO-(\\d+) updated$/, "WO-$1 aktualisiert"]]
+      : [[/^Arbeitsauftrag (.+) löschen[?]$/, "Delete work order $1?"], [/^Löschen: (.+)[?]$/, "Delete $1?"], [/^WO-(\\d+) aktualisiert$/, "WO-$1 updated"]];
     for (const [pattern, template] of patterns) {
       if (pattern.test(text)) return value.replace(text, text.replace(pattern, template));
     }
